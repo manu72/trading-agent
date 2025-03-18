@@ -66,7 +66,7 @@ python start.py order --symbol AAPL --direction BUY --quantity 10 --type MARKET
 
 ## Directory Structure
 
-```
+```no language
 trading_system/
 ├── config.json                  # Configuration file
 ├── requirements.txt             # Dependencies

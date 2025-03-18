@@ -1,0 +1,84 @@
+# Python virtual environments
+venv/
+venv-py311/
+.venv/
+.venv-py311/
+env/
+ENV/
+
+# Python bytecode and cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb
+
+# IDE specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.spyderproject
+.spyproject
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+*.db
+
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Configuration files that might contain sensitive data
+config.json
+*.env
+.env
+secrets.json
+credentials.json
+
+# Trading specific
+*.hdf5
+*.pickle
+*.pkl
+symbols.txt
+watchlist.txt
+
+# Data files
+data/
+datasets/
+historical_data/
+backtest_results/
+models/
+model_weights/
+
+# Temporary files
+tmp/
+temp/
+.temp/
+
+# Documentation build
+docs/_build/
+
+# Interactive Brokers specific
+tws.xml
+ibcontroller.ini
+

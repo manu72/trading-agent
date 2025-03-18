@@ -19,16 +19,14 @@ Before installing the trading system, ensure you have the following:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/deepresearch-trading-system.git
-cd deepresearch-trading-system
+git clone https://github.com/manu72/trading-agent.git
+cd trading-agent
 ```
-
-Alternatively, you can download and extract the ZIP file provided.
 
 ### 2. Create a Virtual Environment (Recommended)
 
 ```bash
-# Create a virtual environment
+# Create a virtual environment [note must be Python 3.11 or below for TensorFlow support]
 python -m venv venv
 
 # Activate the virtual environment
@@ -65,6 +63,7 @@ The requirements.txt file includes the following dependencies:
 1. Install Interactive Brokers Trader Workstation (TWS) or IB Gateway from the [Interactive Brokers website](https://www.interactivebrokers.com/en/index.php?f=14099)
 
 2. Configure API settings in TWS/IB Gateway:
+
    - Go to File > Global Configuration > API > Settings
    - Enable Active X and Socket Clients
    - Set the Socket Port (default: 7497 for paper trading, 7496 for live trading)
@@ -77,11 +76,13 @@ The requirements.txt file includes the following dependencies:
 ### 5. Configure the Trading System
 
 1. Copy the example configuration file:
+
    ```bash
    cp config.example.json config.json
    ```
 
 2. Edit the configuration file to match your preferences:
+
    ```bash
    # Use your favorite text editor
    nano config.json
@@ -156,6 +157,7 @@ If you cannot connect to Interactive Brokers:
 If you encounter Python version compatibility issues:
 
 1. Verify your Python version:
+
    ```bash
    python --version
    ```
